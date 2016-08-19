@@ -21,5 +21,5 @@ from documents.views import ocr_view, ocr_form_view
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^ocr/', ocr_view, name='ocr_view'),
-    url(r'^ocr_form/', ocr_form_view, name='ocr_form_view'),
+    url(r'^$', ocr_form_view, name='ocr_form_view'),
 ]

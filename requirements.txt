@@ -2,3 +2,4 @@ Django==1.10
 Cython==0.24.1
 Pillow==3.3.0
 tesserocr==2.1.2
+gunicorn==19.6.0

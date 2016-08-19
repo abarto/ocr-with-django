@@ -5,3 +5,4 @@ __pycache__
 *.pyc
 *.egg-info
 *.sqlite3
+static/
