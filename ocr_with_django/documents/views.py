@@ -15,6 +15,7 @@ class OcrView(View):
     def post(self, request, *args, **kwargs):
         with PyTessBaseAPI() as api:
             with Image.open(request.FILES['image']) as image:
+                image = image.convert('RGB')
                 sharpened_image = image.filter(ImageFilter.SHARPEN)
                 api.SetImage(sharpened_image)
                 utf8_text = api.GetUTF8Text()
